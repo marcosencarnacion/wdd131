@@ -54,3 +54,58 @@ nav a:hover {
     color: #ddd;
     text-decoration: underline;
 }
+
+
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+
+.main-grid>.card:not(.web-dev-resources) {
+    grid-column: 1;
+}
+
+
+.web-dev-resources {
+    grid-column: 2;
+}
+
+
+@media (max-width: 768px) {
+    .main-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+.web-dev-resources ul {
+    list-style: none;
+    padding: 0;
+}
+
+.web-dev-resources li {
+    margin: 10px 0;
+}
+
+.web-dev-resources a {
+    color: #007bff;
+    text-decoration: none;
+}
