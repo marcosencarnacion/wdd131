@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Lora:wght@400;700&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -18,6 +20,7 @@ html {
     height: 100%;
 }
 
+
 header h1 {
     background-color: #2b4373;
     padding: 20px;
@@ -29,15 +32,6 @@ header h1 {
 
 header h1 span {
     color: yellow;
-}
-
-.main-layout {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
 }
 
 
@@ -62,6 +56,32 @@ nav a:hover {
 }
 
 
+.main-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    margin-bottom: 20px;
+}
+
 .hero-content img {
     max-width: 100%;
     height: auto;
@@ -69,14 +89,21 @@ nav a:hover {
 
 
 .web-dev-resources {
-    background-color: #f4f4f4;
+    background-color: #f9f9f9;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.web-dev-resources h2 {
+    font-family: 'Lora', serif;
+    font-size: 1.5rem;
+    color: #2b4373;
+    margin-bottom: 10px;
 }
 
 .web-dev-resources ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
 }
 
@@ -85,12 +112,32 @@ nav a:hover {
 }
 
 .web-dev-resources a {
+    display: block;
+    color: #333;
     text-decoration: none;
-    color: #007acc;
-    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 5px 0;
 }
 
 .web-dev-resources a:hover {
-    color: #005b99;
-    text-decoration: underline;
+    background-color: #ddd;
+    color: #222;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #2b4373;
+    color: white;
+    padding: 10px;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+#currentyear,
+#lastModified {
+    color: #ffd700;
 }
