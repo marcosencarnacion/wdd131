@@ -142,7 +142,9 @@ body {
     display: grid;
     grid-template-columns: 1.85fr 1fr;
     gap: 20px;
-    margin: 20px;
+    margin: 20px auto;
+    max-width: 1700px;
+
 }
 
 .content-wrapper {
@@ -169,7 +171,8 @@ body {
 
 .web-dev-resources {
     margin-left: -25px;
-    min-height: 632px;
+    min-height: 663.5px;
+    position: relative;
 
 }
 
