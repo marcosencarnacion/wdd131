@@ -8,6 +8,7 @@
         content="Discover Marcos Vinicio Encarnacion Castro's WDD 131- Dynamic Web Fundamentals page. Explore links to his LikedIn, Canvas, Scripture, Final Project, and Web Development resources. Learn more about Marcos, including his background and the country he's from">
     <meta name="author" content="Marcos Encarnacion">
     <title>WDD 131 - Dynamic Web Fundamentals - Marcos Encarnacion</title>
+    <link rel="stylesheet" href="styles/base.css">
 </head>
 
 <body>
@@ -48,11 +49,7 @@
         <p id="lastModified"></p>
     </footer>
 
-    <script>
-        document.getElementById('currentyear').textContent = new Date().getFullYear();
-
-        document.getElementById('lastModified').textContent = 'Last modified: ' + document.lastModified;
-    </script>
+    <script src="scripts/getdates.js"></script>
 
 </body>
 
