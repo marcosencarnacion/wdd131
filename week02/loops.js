@@ -21,7 +21,7 @@ myInfo = {
 };
 
 // Using the forEach
-const foodsElement = document.querySelector('#favorite-foods'); // Select the <ul> where the list items will be added
+const foodsElement = document.querySelector("#favorite-foods"); // Select the <ul> where the list items will be added
 function createAppendFoodItem(food) {
     let favoriteFood = document.createElement("li"); // Create an <li>
     favoriteFood.textContent = food; // Add the food's name
