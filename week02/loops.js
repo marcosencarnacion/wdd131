@@ -20,7 +20,7 @@ myInfo = {
     ],
 };
 
-//
+// Using the forEach
 const foodsElement = document.querySelector('#favorite-foods'); // Select the <ul> where the list items will be added
 function createAppendFoodItem(food) {
     let favoriteFood = document.createElement("li"); // Create an <li>
@@ -30,6 +30,8 @@ function createAppendFoodItem(food) {
 
 myInfo.favoriteFoods.forEach(createAndAppendFoodItem);
 
+// using the .map
+const foodListItems = myInfo.favoriteFoods.map((food) => `<li>${food}</li>`);
 
 // Step 5: Append the <li> elements created above as children of the HTML <ul> element with an ID of favorite-foods
 document.querySelector("#favorite-foods").appendChild(favoriteFood1);
