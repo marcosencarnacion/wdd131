@@ -41,4 +41,20 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
-  }
+}
+
+
+/* Main Content */
+main h2 {
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+#temple-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
