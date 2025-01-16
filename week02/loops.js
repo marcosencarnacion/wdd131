@@ -32,6 +32,7 @@ myInfo.favoriteFoods.forEach(createAndAppendFoodItem);
 
 // using the .map
 const foodListItems = myInfo.favoriteFoods.map((food) => `<li>${food}</li>`);
+foodsElement.innerHTML = foodListElements.join("");
 
 // Step 5: Append the <li> elements created above as children of the HTML <ul> element with an ID of favorite-foods
 document.querySelector("#favorite-foods").appendChild(favoriteFood1);
