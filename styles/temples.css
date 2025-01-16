@@ -17,9 +17,17 @@ header {
     text-align: center;
     padding: 1rem 0;
     background-color: #004080;
-    color: #fff;
+    color: white;
 }
 
 header h1 {
     font-size: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    padding: 0.5rem 0;
 }
