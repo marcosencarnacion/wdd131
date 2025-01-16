@@ -1,7 +1,7 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Body styles */
@@ -30,4 +30,11 @@ nav ul {
     gap: 1rem;
     list-style: none;
     padding: 0.5rem 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
 }
