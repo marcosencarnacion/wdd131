@@ -36,14 +36,14 @@ foodsElement.innerHTML = foodListElements.join("");
 
 // Activity 2: Simplify with Arrow Functions
 document.querySelector("#favorite-foods").innerHTML = myInfo.favoriteFoods
-.map((food) => `<li>${food}</li>`)
-.join("");
+    .map((food) => `<li>${food}</li>`)
+    .join("");
 
 // Activity 3: Make the Code Reusable
 // Step 1: Write a Template Function
 
 function foodsTemplate(food) {
-    return `<li>${food}</li>`; 
+    return `<li>${food}</li>`;
 }
 
 function placesTemplate(place) {
@@ -55,6 +55,17 @@ function generateListMarkup(list, templateCallback) {
     const htmlList = list.map(templateCallback); // Create HTML for each item
     return htmlList.join("");                    // Combine all items into one string
 }
+
+// Step 3: Use the Function
+foodsElement.innerHTML = generateListMarkup(
+    myInfo.favoriteFoods,
+    foodsTemplate
+);
+
+placesElement.innerHTML = generateListMarkup(
+    myInfo.placesLived,
+    placesTemplate
+);
 
 
 // Step 5: Append the <li> elements created above as children of the HTML <ul> element with an ID of favorite-foods
