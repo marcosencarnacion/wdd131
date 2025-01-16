@@ -71,3 +71,9 @@ figure img {
     height: auto;
     border-radius: 5px;
 }
+
+figcaption {
+    margin-top: 0.5rem;
+    color: #555;
+    font-size: 0.9rem;
+}
