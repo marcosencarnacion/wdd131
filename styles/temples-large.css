@@ -23,3 +23,17 @@
         /* Adjusts to a 3-column layout */
         gap: 1.5rem;
     }
+
+    figure {
+        padding: 1.5rem;
+    }
+
+    figcaption {
+        font-size: 1rem;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 0.9rem;
+    }
+}
