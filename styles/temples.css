@@ -38,3 +38,7 @@ nav a {
     font-weight: bold;
     font-size: 0.9rem;
 }
+
+nav a:hover {
+    text-decoration: underline;
+  }
