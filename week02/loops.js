@@ -46,6 +46,10 @@ function foodsTemplate(food) {
     return `<li>${food}</li>`; 
 }
 
+function placesTemplate(place) {
+    return `<dt>${place.place}</dt><dd>${place.length}</dd>`;
+}
+
 
 
 // Step 5: Append the <li> elements created above as children of the HTML <ul> element with an ID of favorite-foods
