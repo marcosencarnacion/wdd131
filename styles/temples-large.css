@@ -18,4 +18,8 @@
         font-size: 1.5rem;
     }
 
-    
+    #temple-gallery {
+        grid-template-columns: repeat(3, 1fr);
+        /* Adjusts to a 3-column layout */
+        gap: 1.5rem;
+    }
