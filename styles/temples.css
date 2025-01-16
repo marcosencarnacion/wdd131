@@ -33,6 +33,7 @@ nav ul {
 }
 
 nav a {
+    display: block;
     text-decoration: none;
     color: white;
     font-weight: bold;
