@@ -136,7 +136,7 @@ main h2 {
 figure {
     background-color: #fff;
     padding: 1rem;
-    border: 1px solid #ddd;
+    border: 1px solid white;
     border-radius: 5px;
     text-align: center;
 }
