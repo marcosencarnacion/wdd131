@@ -23,7 +23,7 @@ header {
 }
 
 header h1 {
-    color: white;
+    color: #f9f9f9;
     margin-left: 0.7rem;
 }
 
@@ -35,10 +35,9 @@ header h1 {
 
 .nav-list li a {
     text-decoration: none;
-    color: white;
+    color: #f9f9f9;
     font-weight: bold;
     margin-right: 1.8rem;
-    transition: color 0.3s ease;
 }
 
 .nav-list li a:hover {
@@ -59,15 +58,15 @@ header h1 {
         font-size: 2rem;
         background-color: transparent;
         cursor: pointer;
-        color: white;
+        color: #f9f9f9;
     }
 
     .open-menu {
-        color: white;
+        color: #f9f9f9;
     }
 
     .close-menu {
-        color: white;
+        color: #f9f9f9;
     }
 
     .nav {
