@@ -42,7 +42,7 @@ header h1 {
 }
 
 .nav-list li a:hover {
-    color: #ffcc00;
+    text-decoration: underline;
 }
 
 .open-menu,
