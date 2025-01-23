@@ -45,11 +45,6 @@ header h1 {
     width: 100%;
     max-height: 300px;
     object-fit: cover;
-    border-radius: 10px;
-}
-
-main {
-    padding: 1rem;
 }
 
 h2 {
