@@ -1,0 +1,42 @@
+/* Large Screen Styles */
+@media (min-width: 768px) {
+    header {
+        padding: 20px 40px;
+    }
+
+    h1 {
+        font-size: 3rem;
+
+    }
+
+    .hero {
+        height: 400px;
+    }
+
+    .info-box,
+    .weather-box {
+        display: inline-block;
+        width: 45%;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .info-box {
+        background-color: var(--yellow);
+        color: var(--dark-gray);
+    }
+
+    .weather-box {
+        background-color: var(--blue);
+    }
+
+    footer {
+        font-size: 1.2rem;
+    }
+}
+
+.weather-box h3 {
+    position: relative;
+    padding-left: 30px;
+    
+}
