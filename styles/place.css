@@ -1,88 +1,82 @@
+:root {
+    --primary-color: #004da8;
+    /* Azul de la bandera de Colombia */
+    --secondary-color: #fecb00;
+    /* Amarillo de la bandera */
+    --accent-color: #cd2026;
+    /* Rojo de la bandera */
+    --text-color: #333;
+    --background-color: #f9f9f9;
+    --font-family: 'Roboto', sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root {
-    --yellow: #FCD116;
-    --blue: #0033A0;
-    --red: #D50032;
-    --white: #FFFFFF;
-    --dark-gray: #333333;
-}
-
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--background-color);
     line-height: 1.6;
-    color: var(--dark-gray);
-    background-color: var(--white);
-    margin: 0;
-    padding: 0;
 }
 
 header {
-    background-color: var(--yellow);
-    color: var(--white);
-    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
     text-align: center;
+    padding: 1rem;
 }
 
-h1 {
+header h1 {
     font-size: 2rem;
-    margin: 0;
 }
 
 .hero {
-    width: 100%;
-    height: 300px;
-    background-color: var(--blue);
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
 }
 
 .hero img {
     width: 100%;
-    height: auto;
-    display: block;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+main {
+    padding: 1rem;
 }
 
 h2 {
-    font-size: 1.5rem;
-    color: var(--blue);
-    text-align: left;
-    margin-top: 20px;
+    text-align: center;
+    color: var(--primary-color);
+    margin: 1rem 0;
 }
 
-.info-box {
-    margin: 20px;
-    padding: 15px;
-    background-color: var(--blue);
-    color: var(--white);
-}
-
-.info-box p {
-    margin: 5px 0;
-}
-
+.info-box,
 .weather-box {
-    margin: 20px;
-    padding: 15px;
-    background-color: var(--red);
-    color: var(--white);
+    border: 2px solid var(--secondary-color);
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    background: white;
 }
 
+.info-box h3,
 .weather-box h3 {
-    font-size: 1.2rem;
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
 }
 
 footer {
-    background-color: var(--dark-gray);
-    color: var(--white);
     text-align: center;
-    padding: 10px;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
 }
-
-footer p {
-    margin: 5px 0;
-}
-
