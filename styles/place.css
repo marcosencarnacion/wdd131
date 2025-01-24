@@ -67,6 +67,18 @@ body {
         margin-bottom: 1rem;
     }
 
+    .weather-box i {
+        display: none;
+    }
+
+    .weather-box {
+        background-image: url('images/weather-icon.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 4rem 2rem;
+    }
+
     footer {
         background-color: #8B0000;
         color: #fff;
