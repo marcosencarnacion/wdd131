@@ -67,9 +67,7 @@ body {
         margin-bottom: 1rem;
     }
 
-    .weather-box i {
-        display: none;
-    }
+
 
     .weather-box {
         background-image: url('images/weather-icon.svg');
