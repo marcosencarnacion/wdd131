@@ -76,6 +76,10 @@ body {
         height: auto;
     }
 
+    .emoticon {
+        display: none;
+    }
+
     footer {
         background-color: #8B0000;
         color: #fff;
@@ -131,6 +135,10 @@ body {
     #weatherIcon {
         width: 100px;
         height: auto;
+    }
+
+    .emoticon {
+        display: none;
     }
 
     footer {
