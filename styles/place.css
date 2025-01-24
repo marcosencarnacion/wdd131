@@ -129,6 +129,11 @@ body {
         margin-bottom: 1rem;
     }
 
+    #weatherIcon {
+        width: 100px;
+        height: auto;
+    }
+
     footer {
         background-color: #8B0000;
         color: #fff;
