@@ -17,31 +17,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Calculate Wind Chill
   function calculateWindChill(temp, wind) {
-      return (
-          13.12 +
-          0.6215 * temp -
-          11.37 * Math.pow(wind, 0.16) +
-          0.3965 * temp * Math.pow(wind, 0.16)
-      ).toFixed(1);
+    return (13.12 + 0.6215 * temp - 11.37 * Math.pow(wind, 0.16) + 0.3965 * temp * Math.pow(wind, 0.16)).toFixed(1);
   }
 
   let windChill = 'N/A';
   if (temperature <= 10 && windSpeed > 4.8) {
-      windChill = `${calculateWindChill(temperature, windSpeed)} °C`;
+    windChill = `${calculateWindChill(temperature, windSpeed)} °C`;
   }
   document.getElementById('windChill').textContent = windChill;
 
   // Set Weather Icon
   const weatherIcon = document.getElementById('weatherIcon');
-  
+
   // Set icon based on conditions
   if (conditions === "Partly Cloudy") {
-      weatherIcon.classList.add("bi-cloud-sun"); // Add the icon class for Partly Cloudy
+    weatherIcon.classList.add("bi-cloud-sun"); // Add the icon class for Partly Cloudy
   } else if (conditions === "Clear") {
-      weatherIcon.classList.add("bi-sun"); // Add the icon class for Clear
+    weatherIcon.classList.add("bi-sun"); // Add the icon class for Clear
   } else if (conditions === "Rainy") {
-      weatherIcon.classList.add("bi-cloud-rain"); // Add the icon class for Rain
+    weatherIcon.classList.add("bi-cloud-rain"); // Add the icon class for Rain
   } else {
-      weatherIcon.classList.add("bi-cloud"); // Default icon
+    weatherIcon.classList.add("bi-cloud"); // Default icon
   }
 });
