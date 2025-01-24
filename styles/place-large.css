@@ -37,6 +37,14 @@ body {
         width: 100%;
     }
 
+    .hero::after {
+        content: "";
+        display: block;
+        height: 5px;
+        background-color: var(--primary-color);
+        width: 100%;
+    }
+
     .info-box h3 {
         text-align: center;
         background-color: rgba(0, 50, 150, 0.8);
