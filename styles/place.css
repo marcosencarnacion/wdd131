@@ -78,7 +78,7 @@ body {
 }
 
 /* Tablet Styles */
-@media (min-width: 601px) and (max-width: 1000px) {
+@media (min-width: 601px) and (max-width: 1024px) {
     header {
         background-color: #FDB813;
         text-align: center;
@@ -93,29 +93,38 @@ body {
 
     .info-box,
     .weather-box {
-        position: absolute;
-        top: 10rem;
-        left: 5rem;
-        right: 5rem;
-        width: auto;
+        position: static;
+        width: 98%;
+        margin: 0 auto 2rem;
         padding: 2rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        font-size: 1.2rem;
+        border-radius: 12px;
+        background-color: rgba(255, 255, 255, 0.9);
+        line-height: 1.8;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .info-box h3,
     .weather-box h3 {
+        font-size: 1.4rem;
+        text-align: center;
+        background-color: rgba(0, 50, 150, 0.8);
+        mix-blend-mode: multiply;
+        color: white;
+        padding: 1rem;
+        border-radius: 10px;
         font-size: 1.5rem;
+        margin-bottom: 1rem;
     }
 
     footer {
         background-color: #8B0000;
-        /* Rojo */
         color: #fff;
         padding: 2rem 1rem;
-        /* Mismo padding reducido como en móvil */
         text-align: center;
         font-size: 1.3rem;
-        /* Tamaño de fuente ligeramente mayor que en móvil */
         line-height: 1.6;
-        /* Mejor interlineado para mejorar la legibilidad */
     }
 }

@@ -22,7 +22,7 @@ body {
     padding: 0;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1025px) {
 
     header {
         background-color: #FDB813;
