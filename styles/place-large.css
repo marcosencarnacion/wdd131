@@ -1,13 +1,7 @@
 :root {
-    --primary-color: #004da8;
-    /* Azul de la bandera de Colombia */
-    --secondary-color: #FDB813;
-    /* Amarillo de la bandera */
-    --accent-color: #cd2026;
-    /* Rojo de la bandera */
-    --text-color: #333;
-    --background-color: #f9f9f9;
-    --font-family: 'Roboto', sans-serif;
+    :root {
+        --colors: #004da8, #FDB813, #cd2026;
+    }
 }
 
 * {
