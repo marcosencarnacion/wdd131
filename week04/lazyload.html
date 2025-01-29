@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A demonstration of lazy loading images in a web page using HTML, 
+    CSS, and JavaScript. Includes smooth fade-in effects and optimized loading for performance.">
+    <title>Lazy Loading Images Demo | WDD 131 - Marcos Encarnacion</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <script src="scripts/lazyload.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Lazy Loading Images Demo</h1>
+    </header>
+
+    <main>
+        <picture>
+            <img src="images/arequipa-peru-temple.webp" loading="lazy" alt="Arequipa Peru Temple Exterior" width="400"
+                height="600">
+        </picture>
+        <picture>
+            <img src="images/bogota-colombia-temple.webp" loading="lazy" alt="Bogota Colombia Temple Exterior"
+                width="400" height="600">
+        </picture>
+        <picture>
+            <img src="images/brigham-city-temple.webp" loading="lazy" alt="Placeholder Image 3" width="400"
+                height="600">
+        </picture>
+        <picture>
+            <img src="images/durban-south-africa-temple.webp" loading="lazy" alt="Placeholder Image 4" width="400"
+                height="600">
+        </picture>
+        <picture>
+            <img src="images/philadelphia-pennsylvania-temple.webp" loading="lazy" alt="Placeholder Image 5" width="400"
+                height="600">
+        </picture>
+        <picture>
+            <img src="images/santo-domingo-dominican-republic-temple.webp" loading="lazy" alt="Placeholder Image 6"
+                width="400" height="600">
+        </picture>
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span> 🌍 Marcos Encarnacion 🌍 Colombia</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
