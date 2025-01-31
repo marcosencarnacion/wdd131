@@ -167,8 +167,4 @@ document.addEventListener('DOMContentLoaded', () => {
             gallery.appendChild(figure);
         });
     }
-
-
-
-
 });
