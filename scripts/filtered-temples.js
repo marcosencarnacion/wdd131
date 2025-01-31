@@ -92,6 +92,33 @@ document.addEventListener('DOMContentLoaded', () => {
     // Display all temples initially
     displayTemples(temples);
 
+    // Add event listeners to menu items for filtering
+    document.querySelector('a[href="filtered-temples.html"]').addEventListener("click", (e) => {
+        e.preventDefault();
+        displayTemples(temples); // Show all temples
+    });
+
+    // Filter for old temples
+    document.getElementById("old").addEventListener("click", (e) => {
+        e.preventDefault();
+        const oldTemples = temples.filter(temple => {
+            const year = parseInt(temple.dedicated.split(",")[0]);
+            return year < 1900;
+        });
+        displayTemples(oldTemples);
+    });
+
+    // Filter for new temples
+    document.getElementById("new").addEventListener("click", (e) => {
+        e.preventDefault();
+        const newTemples = temples.filter(temple => {
+            const year = parseInt(temple.dedicated.split(",")[0]);
+        });
+        displayTemples(newTemples);
+    });
+
+    
+
 
 
     function displayTemples(templesArray) {
