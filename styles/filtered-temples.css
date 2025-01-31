@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 0 1rem;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #004080;
+}
+
+header h1 {
+    color: #f9f9f9;
+    margin-left: 0.7rem;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #f9f9f9;
+    font-weight: bold;
+    margin-right: 1.8rem;
+}
+
+.nav-list li a:hover {
+    text-decoration: underline;
+}
+
+.open-menu,
+.close-menu {
+    display: none;
+}
+
+@media screen and (max-width: 660px) {
+
+    .open-menu,
+    .close-menu {
+        display: block;
+        border: 0;
+        font-size: 2rem;
+        background-color: transparent;
+        cursor: pointer;
+        color: #f9f9f9;
+    }
+
+    .open-menu {
+        color: #f9f9f9;
+    }
+
+    .close-menu {
+        color: #f9f9f9;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #1b5691;
+        padding: 2.5rem;
+        bottom: 0;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .nav-visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+}
+
+
+
+
+/* Main Content */
+
+main {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+main h2 {
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+#temple-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+@media screen and (max-width: 768px) {
+    #temple-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #temple-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+figure {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+figcaption {
+    margin-top: 0.5rem;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #004080;
+    color: #fff;
+    font-size: 0.9rem;
+}

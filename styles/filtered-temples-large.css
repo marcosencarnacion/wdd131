@@ -1,0 +1,39 @@
+@media (min-width: 768px) {
+
+    /* Header */
+    header {
+        padding: 1.5rem 0;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    /* Main Content */
+    main h2 {
+        font-size: 1.5rem;
+    }
+
+    #temple-gallery {
+        grid-template-columns: repeat(3, 1fr);
+        /* Adjusts to a 3-column layout */
+        gap: 1.5rem;
+    }
+
+    figure {
+        padding: 1.5rem;
+    }
+
+    figcaption {
+        font-size: 1rem;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 0.9rem;
+    }
+}
