@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Assign attributes and content
             img.src = temple.imageUrl;
-            img.alt = temple.templeName;
+            img.alt = `Image of ${temple.templeName} in ${temple.location}`;
             img.loading = "lazy"; // Lazy loading
             img.width = 400; // Set explicit width
             img.height = 250; // Set explicit height
