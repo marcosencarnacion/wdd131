@@ -113,11 +113,25 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         const newTemples = temples.filter(temple => {
             const year = parseInt(temple.dedicated.split(",")[0]);
+            return year > 2000;
         });
         displayTemples(newTemples);
     });
 
-    
+    // Filter for Large temples
+    document.getElementById("large").addEventListener("click", (e) => {
+        e.preventDefault();
+        const largeTemples = temples.filter(temples => temp.area > 90000);
+        displayTemples(largeTemples);
+    });
+
+    // Filter for Small temples
+    document.getElementById("small").addEventListener("click", (e) => {
+        e.preventDefault();
+        const smallTemples = temples.filter(temple => temple.area < 10000);
+        displayTemples(smallTemples);
+    });
+
 
 
 
