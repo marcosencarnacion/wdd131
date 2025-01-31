@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Filter for Large temples
     document.getElementById("large").addEventListener("click", (e) => {
         e.preventDefault();
-        const largeTemples = temples.filter(temples => temp.area > 90000);
+        const largeTemples = temples.filter(temple => temple.area > 90000);
         displayTemples(largeTemples);
     });
 
