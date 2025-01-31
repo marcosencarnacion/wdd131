@@ -62,4 +62,6 @@ const temples = [
         area: 53500,
         imageUrl: "images/bogota-colombia-temple.webp"
     }
+
+    // Temple Data Resource: https://churchofjesuschristtemples.org/temples/
 ];
