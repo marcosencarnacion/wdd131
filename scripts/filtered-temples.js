@@ -62,6 +62,14 @@ const temples = [
         dedicated: "1999, April, 24-26",
         area: 53500,
         imageUrl: "images/bogota-colombia-temple.webp"
+    },
+
+    {
+        templeName: "San Diego California Temple",
+        location: "San Diego, California",
+        dedicated: "1993, April, 25-30",
+        area: 72000,
+        imageUrl: "images/san-diego-california-temple.webp"
     }
 
     // Temple Data Resource: https://churchofjesuschristtemples.org/temples/
