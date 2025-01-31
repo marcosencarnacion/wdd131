@@ -88,6 +88,12 @@ document.addEventListener('DOMContentLoaded', () => {
         nav.classList.remove("nav-visible");
     });
 
+
+    // Display all temples initially
+    displayTemples(temples);
+
+
+
     function displayTemples(templesArray) {
         const gallery = document.getElementById("temple-gallery");
         gallery.innerHTML = ""; // Clear the gallery before adding new elements
