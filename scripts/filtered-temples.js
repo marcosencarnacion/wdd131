@@ -1,3 +1,4 @@
+// Array of Temples
 const temples = [
     {
         templeName: "Aba Nigeria",
@@ -87,6 +88,37 @@ document.addEventListener('DOMContentLoaded', () => {
         nav.classList.remove("nav-visible");
     });
 
+    function displayTemples(templesArray) {
+        const gallery = document.getElementById("temple-gallery");
+        gallery.innerHTML = ""; // Clear the gallery before adding new elements
+
+        templesArray.forEach(temple => {
+            // Create HTML elements
+            const figure = document.createElement("figure");
+            const img = document.createElement("img");
+            const figcaption = document.createElement("figcaption");
+            const details = document.createElement("p");
+
+            // Assign attributes and content
+            img.src = temple.imageUrl;
+            img.alt = temple.templeName;
+            img.loading = "lazy"; // Lazy loading
+            figcaption.textContent = temple.templeName;
+            details.innerHTML = `<strong>Location:</strong> ${temple.location} <br>
+                                 <strong>Dedicated:</strong> ${temple.dedicated} <br>
+                                 <strong>Area:</strong> ${temple.area} sq. ft.`;
+
+            // Add elements to `figure`
+            figure.appendChild(img);
+            figure.appendChild(figcaption);
+            figure.appendChild(details);
+
+            // Add `figure` to gallery
+            gallery.appendChild(figure);
+        });
+    }
 
 
-})
+
+
+});
