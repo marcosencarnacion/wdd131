@@ -150,6 +150,9 @@ document.addEventListener('DOMContentLoaded', () => {
             img.src = temple.imageUrl;
             img.alt = temple.templeName;
             img.loading = "lazy"; // Lazy loading
+            img.width = 400; // Set explicit width
+            img.height = 250; // Set explicit height
+
             figcaption.textContent = temple.templeName;
             details.innerHTML = `<strong>Location:</strong> ${temple.location} <br>
                                  <strong>Dedicated:</strong> ${temple.dedicated} <br>
