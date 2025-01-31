@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const lastModified = document.lastModified;
     document.getElementById('lastModified').textContent = `Last updated: ${lastModified}`;
 
-    // Hambuerger Menu functionality
+    // Hamburger Menu functionality
     const nav = document.querySelector("#nav");
     const open = document.querySelector("#open");
     const close = document.querySelector("#close");
