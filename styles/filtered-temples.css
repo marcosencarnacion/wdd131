@@ -66,7 +66,8 @@ header h1 {
     }
 
     .close-menu {
-        color: #f9f9f9;
+        color: #004080;
+
     }
 
     .nav {
@@ -76,13 +77,20 @@ header h1 {
         flex-direction: column;
         align-items: end;
         gap: 1rem;
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
-        background-color: #1b5691;
+        background-color: #ffffff;
+        background: linear-gradient(135deg, #ffffff, #4682b4);
+        color: #004080;
         padding: 2.5rem;
         bottom: 0;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        border: 1px solid #004080;
+    }
+
+    .nav-list li a {
+        color: #004080;
     }
 
     .nav-visible {
@@ -129,6 +137,55 @@ main h2 {
 @media screen and (max-width: 480px) {
     #temple-gallery {
         grid-template-columns: 1fr;
+    }
+
+    .open-menu,
+    .close-menu {
+        display: block;
+        font-size: 2rem;
+        background-color: transparent;
+        cursor: pointer;
+        color: #F4F4F4;
+    }
+
+    .open-menu {
+        color: #f9f9f9;
+    }
+
+    .close-menu {
+        color: #004080;
+
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #ffffff;
+        color: #004080;
+        padding: 2.5rem;
+        bottom: 0;
+        box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.3);
+    }
+
+    .nav-list li a {
+        color: #004080;
+    }
+
+    .nav-visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
     }
 }
 
