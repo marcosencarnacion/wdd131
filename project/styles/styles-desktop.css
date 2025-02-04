@@ -1,0 +1,42 @@
+/* styles-mobile.css */
+
+/* Mobile-specific adjustments */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 10px;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 0 5%;
+}
+
+section h2 {
+    font-size: 1.5rem;
+}
+
+section p,
+section li {
+    font-size: 1rem;
+}
+
+.wireframe {
+    width: 100%;
+    height: auto;
+}
+
+/* Additional adjustments if needed */
+ul,
+ol {
+    margin-left: 15px;
+}
