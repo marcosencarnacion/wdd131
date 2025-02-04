@@ -60,3 +60,14 @@ section ol {
 section li {
     margin-bottom: 10px;
 }
+
+/* Images (Wireframes) */
+.wireframe {
+    display: block;
+    max-width: 90%;
+    margin: 20px auto;
+    border: 2px solid #ccc;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
