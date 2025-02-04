@@ -71,3 +71,14 @@ section li {
 }
 
 /* Footer */
+footer {
+    background-color: #002D62;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer p {
+    margin: 5px 0;
+}
