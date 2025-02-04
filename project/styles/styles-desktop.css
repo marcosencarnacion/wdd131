@@ -51,3 +51,12 @@ section p {
     margin-bottom: 15px;
 }
 
+section ul,
+section ol {
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+section li {
+    margin-bottom: 10px;
+}
