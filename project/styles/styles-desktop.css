@@ -1,2 +1,16 @@
 /* styles-desktop.css */
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    color: #002D62;
+    font-family: 'Lora', serif;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
