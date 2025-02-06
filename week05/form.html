@@ -36,11 +36,28 @@
 
             <fieldset class="stars">
                 <legend>Overall Rating</legend>
-                <label><input type="radio" id="onestar" name="rating" value="1">☆</label>
-                <label><input type="radio" id="twostar" name="rating" value="2">☆☆</label>
-                <label><input type="radio" id="threestar" name="rating" value="3">☆☆☆</label>
-                <label><input type="radio" id="fourstar" name="rating" value="4">☆☆☆☆</label>
-                <label><input type="radio" id="fivestar" name="rating" value="5">☆☆☆☆☆</label>
+
+                <div class="rating">
+                    <label><input type="radio" id="onestar" name="rating" value="1">☆</label>
+                    <label><input type="radio" id="twostar" name="rating" value="2">☆☆</label>
+                    <label><input type="radio" id="threestar" name="rating" value="3">☆☆☆</label>
+                    <label><input type="radio" id="fourstar" name="rating" value="4">☆☆☆☆</label>
+                    <label><input type="radio" id="fivestar" name="rating" value="5">☆☆☆☆☆</label>
+                </div>
+
+                <div class="installation-date">
+                    <legend for="installation-date">Date of Installation:</legend>
+                    <label><input type="date" id="installation-date" name="installationDate" required></label>
+                </div>
+
+                <div class="useful-features">
+                    <legend for="useful-features">Which features did you find useful in the product? (Check all that
+                        apply)</legend>
+                    <label><input type="checkbox" id="durability" name="durability" value="yes"> Durability</label>
+                    <label><input type="checkbox" id="easy-use" name="easy-use" value="yes"> Easy of Use</label>
+                    <label><input type="checkbox" id="performance" name="performance" value="yes"> Performance</label>
+                    <label><input type="checkbox" id="design" name="design" value="yes"> Design</label>
+                </div>
 
             </fieldset>
 
