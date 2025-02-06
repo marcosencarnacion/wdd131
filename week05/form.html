@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore a product review form to give your feedback about a product of your preference, including your opinion about their various features, such as durability, performance, and design.">
+    <meta name="author" content="Marcos Encarnacion">
+    <title>Product Review Form | WDD 131 - Dynamic Web Fundamentals - Marcos Encarnacion</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form-mobile.css">
+    <link rel="stylesheet" href="styles/form-desktop.css" media="(min-width: 768px)">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html">
+            <fieldset>
+                <legend>Product Information</legend>
+
+                <label for="product">Product Name</label>
+                <select id="productSelect" name="product" required>
+                    <option value="" disabled selected>Select Product...</option>
+                </select>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span> 🌴 Marcos Encarnacion 🌴 Dominican Republic</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
