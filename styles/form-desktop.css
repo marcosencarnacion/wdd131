@@ -88,7 +88,21 @@ footer {
 }
 
 #productSelect,
-#installation-date {
-    padding: 8px;
+#installation-date,
+#written-review,
+#name {
+    padding: 10px;
     font-size: 1rem;
+    border: 2px solid #4A90E2;
+    border-radius: 8px;
+    width: 100%;
+}
+
+#productSelect:focus,
+#installation-date:focus,
+#written-review:focus
+#name:focus {
+    border-color: #2C2862;
+    box-shadow: 0 0 8px rgba(74, 144, 226, 0.5);
+    outline: none;
 }
