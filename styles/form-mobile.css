@@ -43,6 +43,10 @@
         margin-bottom: 5px;
     }
 
+    .form-group p {
+        margin: 0;
+    }
+
     fieldset {
         border: none;
         display: flex;
