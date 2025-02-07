@@ -9,7 +9,7 @@ body {
     color: #000;
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    max-width: 700px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
 }
@@ -77,15 +77,6 @@ p {
     font-size: 1.3rem;
 }
 
-footer {
-    background-color: #2c2862;
-    color: #ffffff;
-    text-align: center;
-    padding: 0.5rem;
-    border-radius: 5px;
-    margin-top: 1rem;
-    text-align: right;
-}
 
 #productSelect,
 #installation-date,
@@ -100,9 +91,26 @@ footer {
 
 #productSelect:focus,
 #installation-date:focus,
-#written-review:focus
-#name:focus {
+#written-review:focus #name:focus {
     border-color: #2C2862;
     box-shadow: 0 0 8px rgba(74, 144, 226, 0.5);
     outline: none;
+}
+
+
+
+
+footer {
+    background-color: #2c2862;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
 }
