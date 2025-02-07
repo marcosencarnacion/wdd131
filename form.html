@@ -38,20 +38,20 @@
                 <legend>Overall Rating</legend>
 
                 <div class="rating">
-                    <label><input type="radio" id="onestar" name="rating" value="1">☆</label>
-                    <label><input type="radio" id="twostar" name="rating" value="2">☆☆</label>
-                    <label><input type="radio" id="threestar" name="rating" value="3">☆☆☆</label>
-                    <label><input type="radio" id="fourstar" name="rating" value="4">☆☆☆☆</label>
-                    <label><input type="radio" id="fivestar" name="rating" value="5">☆☆☆☆☆</label>
+                    <label for="onestar"><input type="radio" id="onestar" name="rating" value="1">☆</label>
+                    <label for="twostar"><input type="radio" id="twostar" name="rating" value="2">☆☆</label>
+                    <label for="threestar"><input type="radio" id="threestar" name="rating" value="3">☆☆☆</label>
+                    <label for="fourstar"><input type="radio" id="fourstar" name="rating" value="4">☆☆☆☆</label>
+                    <label for="fivestar"><input type="radio" id="fivestar" name="rating" value="5">☆☆☆☆☆</label>
                 </div>
 
                 <div class="installation-date">
-                    <legend for="installation-date">Date of Installation:</legend>
-                    <label><input type="date" id="installation-date" name="installationDate" required></label>
+                    <label for="installation-date">Date of Installation:</label>
+                    <input type="date" id="installation-date" name="installationDate" required>
                 </div>
 
                 <div class="useful-features">
-                    <legend for="useful-features">Which features did you find useful in the product?</legend>
+                    <label for="useful-features">Which features did you find useful in the product?</label>
                     <p> (Check all that apply)</p>
                     <label><input type="checkbox" id="durability" name="durability" value="yes"> Durability</label>
                     <label><input type="checkbox" id="easy-use" name="easy-use" value="yes"> Easy of Use</label>
@@ -60,7 +60,7 @@
                 </div>
 
                 <div class="written-review-container">
-                    <div class="written-review">Written Review (optional)</div>
+                    <label for="written-review">Written Review (optional)</label>
                     <textarea id="written-review" name="written-review" rows="4" cols="50"></textarea>
                 </div>
 
