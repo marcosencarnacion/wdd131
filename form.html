@@ -25,34 +25,34 @@
     <main>
         <form method="get" action="review.html">
             <fieldset>
-                <legend>Product Information</legend>
+                <legend><strong>Product Information</strong></legend>
 
                 <div class="form-group">
-                    <label for="productSelect">Product Name</label>
+                    <label for="productSelect"><strong>Product Name</strong></label>
                     <select id="productSelect" name="product" required>
                         <option value="" disabled selected>Select Product...</option>
                     </select>
                 </div>
 
                 <div class="form-group">
-                    <p>Overall Rating</p>
+                    <p><strong>Overall Rating</strong></p>
                     <div class="rating">
-                        <label for="onestar"><input type="radio" id="onestar" name="rating" value="1">☆</label>
-                        <label for="twostar"><input type="radio" id="twostar" name="rating" value="2">☆☆</label>
-                        <label for="threestar"><input type="radio" id="threestar" name="rating" value="3">☆☆☆</label>
-                        <label for="fourstar"><input type="radio" id="fourstar" name="rating" value="4">☆☆☆☆</label>
-                        <label for="fivestar"><input type="radio" id="fivestar" name="rating" value="5">☆☆☆☆☆</label>
+                        <label for="onestar"><input type="radio" id="onestar" name="rating" value="1">★</label>
+                        <label for="twostar"><input type="radio" id="twostar" name="rating" value="2">★★</label>
+                        <label for="threestar"><input type="radio" id="threestar" name="rating" value="3">★★★</label>
+                        <label for="fourstar"><input type="radio" id="fourstar" name="rating" value="4">★★★★</label>
+                        <label for="fivestar"><input type="radio" id="fivestar" name="rating" value="5">★★★★★</label>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label for="installation-date">Date of Installation:</label>
+                    <label for="installation-date"><strong>Date of Installation:</strong></label>
                     <input type="date" id="installation-date" name="installationDate" required>
                 </div>
 
                 <div class="form-group">
-                    <p>Which features did you find useful in the product?</p>
-                    <p>(Check all that apply)</p>
+                    <p><strong>Which features did you find useful in the product?</strong></p>
+                    <p><strong>(Check all that apply)</strong></p>
                     <label><input type="checkbox" id="durability" name="durability" value="yes"> Durability</label>
                     <label><input type="checkbox" id="ease-use" name="ease-use" value="yes"> Ease of Use</label>
                     <label><input type="checkbox" id="performance" name="performance" value="yes"> Performance</label>
@@ -60,13 +60,13 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="written-review">Written Review (Optional)</label>
+                    <label for="written-review"><strong>Written Review (Optional)</strong></label>
                     <textarea id="written-review" name="written-review" rows="4" cols="50"></textarea>
                 </div>
 
                 <div class="form-group">
-                    <label for="name">Your Name (Optional)</label>
-                    <input type="text" id="name" name="name">
+                    <label for="name"><strong>Your Name (Optional)</strong></label>
+                    <input type="text" id="name" name="name" autocomplete="name">
                 </div>
 
                 <input type="submit" value="Post My Review">
