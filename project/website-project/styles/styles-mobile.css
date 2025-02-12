@@ -102,30 +102,26 @@
     }
 
     .feature {
-        display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
-        gap: 10px;
+        text-align: center;
     }
 
     .feature .image {
-        flex: 1;
-        align-items: center;
-        max-width: 100%;
-        width: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     .feature .image img {
-        width: 100%;
+        width: 90%;
         max-height: 250px;
         object-fit: cover;
         border-radius: 10px;
     }
 
     .feature .text {
-        flex: 2;
-        width: 50%;
-        text-align: left;
+        width: 90%;
     }
 
 
