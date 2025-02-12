@@ -193,7 +193,7 @@ section {
 }
 
 .saying-btn {
-    background-color: #007bff;
+    background-color: #053361;
     color: #FFFFFF;
     font-size: 1.1rem;
     padding: 12px 20px;
@@ -259,3 +259,14 @@ footer {
     color: #FFFFFF;
 }
 
+hr {
+    border: none;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 10px 0;
+}
+
+footer p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
