@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('lastModified').textContent = `Last updated: ${lastModified}`;
 });
 
+/* Array of sayings for the user to display  */
 document.addEventListener("DOMContentLoaded", () => {
     const sayings = [
         "El que madruga, Dios lo ayuda. 🌞",
@@ -24,5 +25,20 @@ document.addEventListener("DOMContentLoaded", () => {
     button.addEventListener("click", () => {
         const randomIndex = Math.floor(Math.random() * sayings.length);
         display.textContent = sayings[randomIndex];
+    });
+});
+
+/* Open and Close Menu */
+document.addEventListener("DOMContentLoaded", function () {
+    const openMenu = document.getElementById("open");
+    const closeMenu = document.getElementById("close");
+    const nav = document.getElementById("nav");
+
+    openMenu.addEventListener("click", () => {
+        nav.classList.add("show");
+    });
+
+    closeMenu.addEventListener("click", () => {
+        nav.classList.remove("show");
     });
 });
