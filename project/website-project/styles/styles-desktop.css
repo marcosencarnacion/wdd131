@@ -23,6 +23,7 @@ header {
     align-items: center;
     justify-content: space-between;
     gap: -50px;
+
 }
 
 .logo {
@@ -73,8 +74,8 @@ section {
 .welcome-section {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 40px;
+    justify-content: space-between;
+    gap: 30px;
     padding: 60px 10%;
 }
 
@@ -82,4 +83,90 @@ section {
     flex: 1;
     max-width: 40%;
     font-size: 1.2rem;
+}
+
+.welcome-section .hero-image img {
+    flex: 2;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.feature .text {
+    flex: 1;
+    font-family: 'Montserrat', sans-serif;
+    color: #002D62;
+}
+
+.feature .text h2 {
+    font-size: 1.8rem;
+    color: #CE1126;
+    margin-bottom: 10px;
+}
+
+.feature .text h2 a {
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.feature .text p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.feature .image img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery a {
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.gallery a:hover {
+    transform: scale(1.05);
 }
