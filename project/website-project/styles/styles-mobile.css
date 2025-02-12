@@ -124,6 +124,28 @@
         width: 90%;
     }
 
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .choose-passion h2 {
+        text-align: center;
+    }
+
+    .gallery a {
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+    }
+
+    .gallery a p {
+        width: 100%;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
 
 
 }
