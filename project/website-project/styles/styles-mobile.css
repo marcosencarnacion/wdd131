@@ -124,6 +124,11 @@
         width: 90%;
     }
 
+    .text a:hover {
+
+        color: #f39c12;
+    }
+
     .gallery {
         display: flex;
         flex-direction: column;

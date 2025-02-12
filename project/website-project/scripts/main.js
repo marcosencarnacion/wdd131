@@ -42,3 +42,14 @@ document.addEventListener("DOMContentLoaded", function () {
         nav.classList.remove("show");
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form");
+
+    if (form) {
+        form.addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent default form submission
+            window.location.href = "thank-you.html"; // Redirect to the thank-you page
+        });
+    }
+});
