@@ -202,6 +202,7 @@ section {
     cursor: pointer;
     margin-bottom: 1rem;
     transition: background 0.3s ease, transform 0.2s;
+    font-weight: bold;
 }
 
 .saying-btn:hover {
