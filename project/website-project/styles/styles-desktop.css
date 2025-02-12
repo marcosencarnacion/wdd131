@@ -118,6 +118,12 @@ section {
     color: #002D62;
 }
 
+.text a:hover {
+
+    color: #f39c12;
+}
+
+
 .feature .text h2 {
     font-size: 1.8rem;
     color: #CE1126;

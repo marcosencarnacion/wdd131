@@ -70,6 +70,21 @@
         </form>
     </main>
 
+    <script>
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const selectedActivity = getQueryParam("activity");
+            if (selectedActivity) {
+                const activitySelect = document.getElementById("activity");
+                activitySelect.value = selectedActivity; // Set the selected option
+            }
+        });
+    </script>
+
     <footer>
         <p>©<span id="currentyear"></span> 🌴 Marcos Encarnacion 🌴 Dominican Republic</p>
         <p id="lastModified"></p>
