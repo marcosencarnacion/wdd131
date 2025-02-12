@@ -1,0 +1,39 @@
+@media screen and (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10p;
+    }
+
+    .logo {
+        max-width: 150px;
+        margin-bottom: 10px;
+    }
+
+    .open-menu {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 3rem;
+        cursor: pointer;
+        color: #000;
+    }
+
+    .nav {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 75%;
+        height: 100%;
+        background-color: #002D62;
+        transition: left 0.3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        align-items: first start;
+    }
+
+    .nav show {
+        left: 0;
+    }
+}
