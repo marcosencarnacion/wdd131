@@ -276,3 +276,155 @@ footer p {
     font-size: 0.9rem;
     margin: 5px 0;
 }
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10p;
+    }
+
+    .logo {
+        max-width: 150px;
+        margin-bottom: 10px;
+    }
+
+    .open-menu {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 3rem;
+        cursor: pointer;
+        color: #FFFFFF;
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 40vw;
+        height: 100%;
+        background-color: #002D62;
+        transition: left 0.3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 15px;
+    }
+
+    .nav.show {
+        left: 0;
+    }
+
+    .close-menu {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+        color: white;
+        align-self: flex-end;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .nav-list li a {
+        text-decoration: none;
+        color: #FFFFFF;
+        display: block;
+        text-align: right;
+    }
+
+    .welcome-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        max-width: 880px;
+        margin: 0 auto;
+    }
+
+    .welcome-section .text {
+        order: 1;
+        padding: 10px;
+        max-width: 880px;
+    }
+
+    .welcome-section .hero-image {
+        order: 2;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .welcome-section .hero-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .features {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .feature {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .feature .image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .feature .image img {
+        width: 90%;
+        max-height: 250px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .feature .text {
+        width: 90%;
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .choose-passion h2 {
+        text-align: center;
+    }
+
+    .gallery a {
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+    }
+
+    .gallery a p {
+        width: 100%;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+
+
+}
