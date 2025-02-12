@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Sign up for an exciting activity in the Dominican Republic! Choose your passion and join the fun.">
+    <title>Activity Sign-up | Choose Your Passion | WDD 131 - Marcos Encarnacion</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/signup-form.css">
+    <link rel="stylesheet" href="styles/form-desktop.css" media="(min-width: 768px)">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Choose Your Passion - Sign Up</h1>
+    </header>
+
+    <main>
+        <form method="post" action="thank-you.html">
+            <fieldset>
+                <legend><strong>Sign up for an Activity</strong></legend>
+
+                <div class="form-group">
+                    <label for="activity"><strong>Select an Activity</strong></label>
+                    <select id="activity" name="activity" required>
+                        <option value="" disabled selected>Select an activity...</option>
+                        <option value="hiking">Hiking</option>
+                        <option value="surfing">Surfing</option>
+                        <option value="snorkeling">Snorkeling</option>
+                        <option value="paragliding">Paragliding</option>
+
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="name"><strong>Full Name</strong></label>
+                    <input type="text" id="name" name="name" placeholder="Enter you full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email"><strong>Email Address</strong></label>
+                    <input type="email" id="email" name="email" placeholder="Enter you email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone"><strong>Phone Number</strong></label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+
+                <div class="form-group date picker">
+                    <label for="date"><strong>Preferred Date</strong></label>
+                    <input type="date" id="date" name="date" required onclick="this.showPicker()">
+                </div>
+
+                <div class="form-group">
+                    <label form="comments"><strong>Additional Comments (Optional)</strong></label>
+                    <textarea id="comments" name="comments" rows="4"
+                        placeholder="Let us know if you have any special requests..."></textarea></textarea>
+
+                </div>
+
+                <input type="submit" value="Sign Up for My Passion">
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span> 🌴 Marcos Encarnacion 🌴 Dominican Republic</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>
