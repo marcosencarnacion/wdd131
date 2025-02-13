@@ -22,7 +22,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: -50px;
+
 
 }
 
@@ -47,7 +47,7 @@ nav {
     color: #000000;
     font-weight: bold;
     font-size: 20px;
-    padding: 10px, 15px;
+    padding: 10px 15px;
     margin-right: 2rem;
     font-family: 'Montserrat', sans-serif;
 }
@@ -297,7 +297,7 @@ hr {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding: 10p;
+        padding: 10px;
     }
 
     .logo {
