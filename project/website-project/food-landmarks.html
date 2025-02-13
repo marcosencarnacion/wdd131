@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles/styles-desktop.css">
     <link rel="stylesheet" href="styles/styles-mobile.css">
-    <script src="scripts/recipe-generator.js" defer></script>
+    <script src="scripts/main.js" defer></script>
 </head>
 
 <body>
@@ -46,7 +46,10 @@
             <h2>Traditional Dominican Dishes</h2>
             <p>
                 Experience the flavors of the Dominican Republic through its delicious cuisine. From hearty stews to
-                refreshing tropical desserts, Dominican food is a fusion of Spanish, African, and Taino influences.</p>
+                refreshing tropical desserts, Dominican food is a fusion of Spanish, African, and Taino influences.
+            </p>
+            <button id="recipe-btn" class="recipe-button">🍽 Try a Random Recipe</button>
+            <div id="recipe-display" class="recipe-container"></div>
         </section>
 
         <section class="dominican-landmarks">
@@ -87,8 +90,28 @@
         </section>
 
     </main>
-
     <footer>
+        <div class="social-icons">
+            <!-- Source: The Social Media URLs used in the footer are from the Dominican Republic Ministry of Tourism webpage-->
+            <a href="https://www.facebook.com/godominicanrepublic" target="_blank" aria-label="Facebook"
+                class="btn btn-primary rounded-circle">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://x.com/GoDomRep?prefetchTimestamp=1739323231279&mx=2" target="_blank" aria-label="Twitter">
+                <i class="bi bi-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UC5PIUhJ73hqMZkql1c4obvw" target="_blank" aria-label="Youtube">
+                <i class="bi bi-youtube"></i>
+            </a>
+            <a href="https://www.instagram.com/godomrep/?igshid=NTc44MTwNjQ2YQ%3D%3D#" target="_blank"
+                aria-label="Instagram">
+                <i class="bi bi-instagram"></i>
+            </a>
+        </div>
 
+        <hr>
+
+        <p>©<span id="currentyear"></span> 🌴 Marcos Encarnacion 🌴 Dominican Republic</p>
+        <p id="lastModified"></p>
     </footer>
 </body>
