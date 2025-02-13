@@ -792,3 +792,18 @@ hr {
         max-width: 80%;
     }
 }
+
+/* DR Facts & Fun */
+.hero-fun-facts {
+    background: url("../images/hero-fun-facts.webp") center/cover no-repeat;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #002D62;
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}

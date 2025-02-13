@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Discover fun facts about the Dominican Republic! 🇩🇴 Learn about its history, culture, famous people, and unique trivia. Test your knowledge with an interactive quiz!">
+    <title>Dr Facts & Fun | Dominican Republic - WDD 131- Marcos Encarnacion</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;700&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles/styles-desktop.css">
+    <link rel="stylesheet" href="styles/styles-mobile.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html">
+            <img src="../website-project/images/dominican-republic-.png" alt="Dominican Republic Logo" class="logo"
+                loading="lazy">
+        </a>
+        <button id="open" class="open-menu" aria-label="Open menu"><i class="bi bi-list"></i></button>
+
+        <nav class="nav" id="nav">
+            <button id="close" class="close-menu" aria-label="Close menu"><i class="bi bi-x"></i></button>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="culture.html" id="old">Culture</a></li>
+                <li><a href="food-landmarks.html" id="new">Food & Landmarks</a></li>
+                <li><a href="dr-facts-fun.html" id="large">DR Facts & Fun</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero-fun-facts">
+            <h1>Discover Dominican Republic Fun Facts!</h1>
+            <p>Explore the rich history, culture, and notable achievements of the DR in a fun way!</p>
+        </section>
+
+        <!-- Quick Facts Section -->
+        <section class="quick-facts">
+            <h2>Quick Facts</h2>
+            <ul>
+                <li><strong>Capital:</strong> Santo Domingo</li>
+                <li><strong>Language:</strong> Spanish</li>
+                <li><strong>Currency:</strong> Dominican Peso (DOP)</li>
+                <li><strong>Independence:</strong> February 27, 1844</li>
+                <li><strong>National Dance & Music:</strong> Merengue & Bachata</li>
+                <li><strong>Highest Mountain:</strong> Pico Duarte (10,164 ft)</li>
+                <li><strong>Most Popular Sport:</strong> Baseball</li>
+            </ul>
+        </section>
+
+        <!-- Did You Know? (Trivia Cards) -->
+        <section class="trivia">
+            <h2>Did You Know?</h2>
+            <div class="trivia-container">
+                <div class="trivia-card">The DR is the only country with a Bible on its flag! 📖</div>
+                <div class="trivia-card">Christopher Columbus landed here in 1492! ⛵</div>
+                <div class="trivia-card">David Ortiz, Sammy Sosa, and Juan Marichal are baseball legends! ⚾</div>
+                <div class="trivia-card">The DR has the first university in the Americas, founded in 1538! 🎓</div>
+            </div>
+        </section>
+
+        <!-- Famous Dominicans Section -->
+        <section class="famous-dominicans">
+            <h2>Famous Dominicans</h2>
+            <div class="people">
+                <div><strong>🏆 Sports:</strong> David Ortiz, Félix Sánchez, Juan Marichal</div>
+                <div><strong>🎶 Music:</strong> Juan Luis Guerra, Romeo Santos, Milly Quezada</div>
+                <div><strong>📜 History:</strong> Juan Pablo Duarte, Oscar de la Renta</div>
+            </div>
+        </section>
+
+        <!-- Interactive Fun Section -->
+        <section class="fun-section">
+            <h2>Want Some Fun?</h2>
+            <button id="fact-button">Get a Random Fact! 🎉</button>
+            <p id="fact-display">Click the button to learn something cool!</p>
+            <a href="quiz.html" class="quiz-btn">Take the DR Quiz! 📚</a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© <span id="year"></span> Exploring the Dominican Republic 🌴</p>
+    </footer>
+
+</body>
+
+</html>
