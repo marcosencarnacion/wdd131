@@ -53,3 +53,44 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const recipes = [
+        {
+            name: "Mangú con los Tres Golpes",
+            description: "Mashed plantains served with fried cheese, salami, and eggs.",
+            image: "../website-project/images/mangu.webp"
+        },
+        {
+            name: "Sancocho",
+            description: "A rich stew made with meat, plantains, and root vegetables.",
+            image: "../website-project/images/sancocho-dominicano.webp"
+        },
+        {
+            name: "Mofongo",
+            description: "Garlic mashed plantains with pork cracklings, served with broth.",
+            image: "../website-project/images/mofongo.webp"
+        },
+        {
+            name: "Tostones",
+            description: "Twice-fried green plantains, crispy and golden.",
+            image: "../website-project/images/tostones.webp"
+        }
+    ];
+
+    const recipeBtn = document.getElementById("recipe-btn");
+    const recipeDisplay = document.getElementById("recipe-display")
+
+    recipeBtn.addEventListener("click", function () {
+        const randomIndex = Math.floor(Math.random() * recipes.length);
+        const randomRecipe = recipes[randomIndex];
+
+        recipeDisplay.innerHTML = `
+            <div class="recipe-card">
+                <h3>${randomRecipe.name}</h3>
+                <img src="${randomRecipe.image}" alt="${randomRecipe.name}" loading="lazy">
+                <p>${randomRecipe.description}</p>
+            </div>
+        `;
+    });
+});
