@@ -698,6 +698,7 @@ hr {
     text-decoration: none;
     border-radius: 8px;
     transition: background 0.3s ease-in-out, transform 0.2s;
+    cursor: pointer;
 }
 
 #recipe-btn:hover {
