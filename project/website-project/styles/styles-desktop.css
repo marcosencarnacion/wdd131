@@ -668,21 +668,18 @@ hr {
 }
 
 
-.food-item img,
 .landmark-item img {
     width: 100%;
     border-radius: 12px;
     height: auto;
 }
 
-.food-item h3,
 .landmark-item h3 {
     margin-top: 15px;
     color: #CE1126;
     font-size: 1.5rem;
 }
 
-.food-item p,
 .landmark-item p {
     font-size: 1rem;
     color: #444;
@@ -719,4 +716,34 @@ hr {
         flex-direction: column;
         gap: 20px;
     }
+}
+
+/* Food Section Styling */
+
+.recipe-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+.recipe-card {
+    background: #fff5e1;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.recipe-card h3 {
+    color: #CE1126;
+    font-size: 1.5rem;
+
+}
+
+.recipe-card img {
+    width: 100%;
+    max-width: 612px;
+    border-radius: 10px;
+    margin-top: 10px;
 }
