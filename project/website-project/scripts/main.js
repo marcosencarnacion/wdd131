@@ -149,9 +149,21 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     ];
 
+    let lastRecipeIndex = -1;
+
     recipeBtn.addEventListener("click", function () {
-        const randomIndex = Math.floor(Math.random() * recipes.length);
+
+        let randomIndex;
+
+        do {
+            randomIndex = Math.floor(Math.random() * recipes.length);
+        } while (randomIndex === lastRecipeIndex);
+
+
+        lastRecipeIndex = randomIndex;
+
         const randomRecipe = recipes[randomIndex];
+
 
         const ingredientsList = randomRecipe.ingredients.map(ing => `<li>${ing}</li>`).join("");
         const stepsList = randomRecipe.steps.map(step => `<li>${step}</li>`).join("");
