@@ -449,6 +449,72 @@ hr {
         opacity: 0.7;
     }
 
+}
 
+/* Culture Style */
+.hero {
+    background: url("../images/festival1.webp") center/cover no-repeat;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #002D62;
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
 
+.festivals {
+    text-align: center;
+    padding: 60px 10%;
+    background: linear-gradient(to bottom, #FFFFFF, #f8f8f8);
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #444;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.festival-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.festival-item {
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.festival-item:hover {
+    transform: translateY(-5px);
+}
+
+.festival-item img {
+    width: 100%;
+    border-radius: 12px;
+    height: auto;
+}
+
+.festival-item h3 {
+    margin-top: 15px;
+    color: #CE1126;
+    font-size: 1.5rem;
+}
+
+.festival-item p {
+    color: #444;
+    font-size: 1rem;
+    line-height: 1.5;
 }

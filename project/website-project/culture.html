@@ -37,25 +37,81 @@
         </nav>
     </header>
 
-    <section class="hero">
-        <h1>Discover the Heart of the Dominican Culture</h1>
-        <p>Traditions, Music, Festivals, and More</p>
-    </section>
-
     <main>
+        <section class="hero">
+            <h1>Discover the Heart of the Dominican Culture</h1>
+            <p>Traditions, Music, Festivals, and More</p>
+        </section>
+
         <section class="festivals">
             <h2>Festivals & Traditions</h2>
-            <div class="content">
-                <div class="text">
-                    <p>Experience vibrant festivals like Carnaval, Merengue Festival, and more.</p>
+            <p class="intro-text">
+                The Dominican Republic is known for its vibrant festivals, rich cultural traditions, and energetic
+                music.
+                Experience the joy of Carnaval, the rhythmic beats of the Merengue Festival, and many more lively
+                celebrations!
+            </p>
+
+            <div class="festival-grid">
+                <div class="festival-item">
+                    <img src="../website-project/images/carnaval.webp" alt="Dominican Carnaval" loading="lazy">
+                    <h3>Carnaval</h3>
+                    <p>
+                        A celebration of the Dominican Republic’s national dance! Held in July and August, this festival
+                        fills the streets
+                        with lively Merengue music, dance competitions, and amazing local cuisine.
+                    </p>
                 </div>
 
-                <div id="images">
-                    <button onclick="prevSlide()">&#10094;</button>
-                    <img id="carousel-image" src="../website-project/images/carnaval.webp" alt="Dominican Festival">
-                    <button onclick="nextSlide()">Next &#10095;</button>
+                <div class="festival-item">
+                    <img src="../website-project/images/merengue.webp" alt="Merengue Festival" loading="lazy">
+                    <h3>Merengue Festival</h3>
+                    <p>
+                        This festival, held in July and August, celebrates the Dominican Republic’s national dance.
+                        The streets come alive with Merengue music, dance competitions, and delicious street food.
+                    </p>
+                </div>
+
+                <div class="festival-item">
+                    <img src="../website-project/images/guloya-festival.webp" alt="Guloya Festival" loading="lazy">
+                    <h3>Guloya Festival</h3>
+                    <p>
+                        This unique festival in San Pedro de Macorís is a UNESCO-recognized cultural event featuring
+                        traditional
+                        African-influenced dances and drumming.
+                    </p>
                 </div>
             </div>
         </section>
+
+
     </main>
+
+
+
+
+    <footer>
+        <div class="social-icons">
+            <!-- Source: The Social Media URLs used in the footer are from the Dominican Republic Ministry of Tourism webpage-->
+            <a href="https://www.facebook.com/godominicanrepublic" target="_blank" aria-label="Facebook"
+                class="btn btn-primary rounded-circle">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://x.com/GoDomRep?prefetchTimestamp=1739323231279&mx=2" target="_blank" aria-label="Twitter">
+                <i class="bi bi-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UC5PIUhJ73hqMZkql1c4obvw" target="_blank" aria-label="Youtube">
+                <i class="bi bi-youtube"></i>
+            </a>
+            <a href="https://www.instagram.com/godomrep/?igshid=NTc44MTwNjQ2YQ%3D%3D#" target="_blank"
+                aria-label="Instagram">
+                <i class="bi bi-instagram"></i>
+            </a>
+        </div>
+
+        <hr>
+
+        <p>©<span id="currentyear"></span> 🌴 Marcos Encarnacion 🌴 Dominican Republic</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
