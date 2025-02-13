@@ -807,3 +807,25 @@ hr {
     font-size: 2rem;
     font-weight: bold;
 }
+
+.quick-facts {
+    text-align: center;
+    padding: 60px 10%;
+    background: linear-gradient(to bottom, #FFFFFF, #f8f8f8);
+    list-style-position: inside;
+}
+
+.trivia {
+    text-align: center;
+    padding: 60px 10%;
+    background: linear-gradient(to bottom, #FFFFFF, #f8f8f8);
+    list-style-position: inside;
+}
+
+.famous-dominicans {
+    text-align: center;
+    padding: 60px 10%;
+    background: #FFFFFF;
+    background: linear-gradient(to bottom, #FFFFFF, #f8f8f8);
+}
+
