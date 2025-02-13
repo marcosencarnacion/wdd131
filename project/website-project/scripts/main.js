@@ -53,3 +53,16 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+
+function showProverb() {
+    const proverbs = [
+        "El que madruga, Dios lo ayuda.",
+        "Camarón que se duerme, se lo lleva la corriente.",
+        "Más vale pajaro en mano que cien voland.",
+        "A caballo regalado no se le mira el colmillo."
+    ];
+
+    const randomIndex = Math.floor(Math.random() * proverbs.length);
+    document.getElementById("proverb-display").innerText = proverbs[randomIndex];
+}

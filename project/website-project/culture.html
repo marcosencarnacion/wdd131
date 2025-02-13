@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore the rich culture of the Dominican Republic—festivals, music, traditions, and more. Discover vibrant celebrations, iconic dances like Merengue and Bachata, and engage with our interactive Dominican proverb generator!.">
+    <meta name="author" content="Marcos Encarnacion">
+    <title>Culture | Dominican Republic - WDD 131-Dynamic Web Fundamentals - Marcos Encarnacion</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;700&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles/styles-desktop.css">
+    <link rel="stylesheet" href="styles/styles-mobile.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="../website-project/images/dominican-republic-.png" alt="Dominican Republic Logo" class="logo"
+                loading="lazy">
+        </a>
+        <button id="open" class="open-menu" aria-label="Open menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button id="close" class="close-menu" aria-label="Close menu"><i class="bi bi-x"></i></button>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="culture.html" id="old">Culture</a></li>
+                <li><a href="food-landmarks.html" id="new">Food & Landmarks</a></li>
+                <li><a href="dr-facts-fun.html" id="large">DR Facts & Fun</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Discover the Heart of the Dominican Culture</h1>
+        <p>Traditions, Music, Festivals, and More</p>
+    </section>
+
+    <main>
+        <section class="festivals">
+            <h2>Festivals & Traditions</h2>
+            <div class="content">
+                <div class="text">
+                    <p>Experience vibrant festivals like Carnaval, Merengue Festival, and more.</p>
+                </div>
+
+                <div id="images">
+                    <button onclick="prevSlide()">&#10094;</button>
+                    <img id="carousel-image" src="../website-project/images/carnaval.webp" alt="Dominican Festival">
+                    <button onclick="nextSlide()">Next &#10095;</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
