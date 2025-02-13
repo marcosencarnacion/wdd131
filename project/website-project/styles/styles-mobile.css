@@ -159,7 +159,163 @@
         height: 1px;
         opacity: 0.7;
     }
+}
 
+/* Responsive Hero Section */
+@media (max-width: 768px) {
+    .hero {
+        height: 60vh;
+        font-size: 1.5rem;
+        padding: 15px;
+    }
+}
 
+.festivals,
+.dominican-music {
+    text-align: center;
+    padding: 60px 10%;
+    background: linear-gradient(to bottom, #FFFFFF, #f8f8f8);
+}
 
+/* Adjusting font sizes for smaller screens */
+.intro-text,
+.dominican-music p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #444;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+
+    .intro-text,
+    .dominican-music p {
+        font-size: 1rem;
+        padding: 0 15px;
+    }
+}
+
+/* Festival and Music Grid */
+.festival-grid,
+.music-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+
+    .festival-grid,
+    .music-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 5%;
+    }
+}
+
+/* Festival & Music Items */
+.festival-item,
+.music-style {
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.festival-item:hover,
+.music-style:hover {
+    transform: translateY(-5px);
+}
+
+/* Image Styling */
+.festival-item img,
+.music-style img {
+    width: 100%;
+    border-radius: 12px;
+    height: auto;
+}
+
+.festival-item h3,
+.music-style h3 {
+    margin-top: 15px;
+    color: #CE1126;
+    font-size: 1.5rem;
+}
+
+/* Adjust Heading for Small Screens */
+@media (max-width: 768px) {
+
+    .festival-item h3,
+    .music-style h3 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Music Section */
+.music-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #053361;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.music-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Music Facts Box */
+.music-facts {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.music-facts h3 {
+    font-size: 1.4rem;
+    color: #CE1126;
+    margin-bottom: 10px;
+}
+
+.music-facts p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.5;
+}
+
+/* Responsive Fixes */
+@media (max-width: 480px) {
+    .music-facts {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .music-facts h3 {
+        font-size: 1.3rem;
+    }
+
+    .music-facts p {
+        font-size: 0.9rem;
+    }
+
+    .music-button {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
 }

@@ -518,3 +518,112 @@ hr {
     font-size: 1rem;
     line-height: 1.5;
 }
+
+
+/* Music Section Style */
+.dominican-music {
+    text-align: center;
+    padding: 60px 10%;
+    background: linear-gradient(to bottom, #FFFFFF, #f8f8f8);
+}
+
+.dominican-music h2 {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #002D62;
+    border-bottom: 3px solid #F4A900;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.dominican-music p {
+    font-size: 1.2rem;
+    color: #444;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    line-height: 1.6;
+}
+
+.music-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.music-style {
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+}
+
+.music-style:hover {
+    transform: translateY(-5px);
+}
+
+.music-style img {
+    width: 100%;
+    border-radius: 12px;
+    height: auto;
+}
+
+.music-style h3 {
+    margin-top: 15px;
+    color: #CE1126;
+    font-size: 1.5rem;
+}
+
+.music-style p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.5;
+    padding: 0 10px;
+}
+
+.music-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #053361;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.music-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.music-facts {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.music-facts h3 {
+    font-size: 1.4rem;
+    color: #CE1126;
+    margin-bottom: 10px;
+}
+
+.music-facts p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.5;
+}
