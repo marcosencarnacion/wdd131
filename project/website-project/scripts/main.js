@@ -1,13 +1,19 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
     // Footer: Display the current year and the last modified date
     const currentYear = new Date().getFullYear();
-    document.getElementById('currentyear').textContent = currentYear;
+    const yearElement = document.getElementById("currentyear");
+    if (yearElement) {
+        yearElement.textContent = currentYear;
+    }
 
     const lastModified = document.lastModified;
-    document.getElementById('lastModified').textContent = `Last updated: ${lastModified}`;
+    const modifiedElement = document.getElementById("lastModified");
+    if (modifiedElement) {
+        modifiedElement.textContent = `Last updated: ${lastModified}`;
+    }
 });
 
-/* Array of sayings for the user to display  */
+/* Array of sayings for the user to display */
 document.addEventListener("DOMContentLoaded", () => {
     const sayings = [
         "El que madruga, Dios lo ayuda. 🌞",
@@ -22,10 +28,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const button = document.getElementById("generateSaying");
     const display = document.getElementById("sayingDisplay");
 
-    button.addEventListener("click", () => {
-        const randomIndex = Math.floor(Math.random() * sayings.length);
-        display.textContent = sayings[randomIndex];
-    });
+    if (button && display) {
+        button.addEventListener("click", () => {
+            const randomIndex = Math.floor(Math.random() * sayings.length);
+            display.textContent = sayings[randomIndex];
+        });
+    }
 });
 
 /* Open and Close Menu */
@@ -34,30 +42,35 @@ document.addEventListener("DOMContentLoaded", function () {
     const closeMenu = document.getElementById("close");
     const nav = document.getElementById("nav");
 
-    openMenu.addEventListener("click", () => {
-        nav.classList.add("show");
-    });
+    if (openMenu && closeMenu && nav) {
+        openMenu.addEventListener("click", () => {
+            nav.classList.add("show");
+        });
 
-    closeMenu.addEventListener("click", () => {
-        nav.classList.remove("show");
-    });
+        closeMenu.addEventListener("click", () => {
+            nav.classList.remove("show");
+        });
+    }
 });
 
+/* Handle form submission */
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("form");
 
     if (form) {
         form.addEventListener("submit", function (event) {
-            event.preventDefault(); // Prevent default form submission
-            window.location.href = "thank-you.html"; // Redirect to the thank-you page
+            event.preventDefault();
+            window.location.href = "thank-you.html";
         });
     }
 });
 
+/* Random Recipe Generator */
 document.addEventListener("DOMContentLoaded", function () {
-
     const recipeBtn = document.getElementById("recipe-btn");
     const recipeDisplay = document.getElementById("recipe-display");
+
+    if (!recipeBtn || !recipeDisplay) return;
 
     const recipes = [
         {
@@ -152,18 +165,13 @@ document.addEventListener("DOMContentLoaded", function () {
     let lastRecipeIndex = -1;
 
     recipeBtn.addEventListener("click", function () {
-
         let randomIndex;
-
         do {
             randomIndex = Math.floor(Math.random() * recipes.length);
         } while (randomIndex === lastRecipeIndex);
 
-
         lastRecipeIndex = randomIndex;
-
         const randomRecipe = recipes[randomIndex];
-
 
         const ingredientsList = randomRecipe.ingredients.map(ing => `<li>${ing}</li>`).join("");
         const stepsList = randomRecipe.steps.map(step => `<li>${step}</li>`).join("");
@@ -184,41 +192,41 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+/* Random Fun Fact Generator */
 document.addEventListener("DOMContentLoaded", function () {
-    // Select the button and display paragraph
     const factButton = document.getElementById("fact-button");
     const factDisplay = document.getElementById("fact-display");
 
-    // Ensure both elements exist before adding an event listener
-    if (factButton && factDisplay) {
-        const facts = [
-            "The Dominican Republic shares an island with Haiti, making it one of two Caribbean nations on one island! 🇩🇴",
-            "Merengue and Bachata are both UNESCO-recognized cultural treasures! 🎶",
-            "The DR has the second-largest gold mine in the world, the Pueblo Viejo mine! ⛏️",
-            "The first streetlights in the Americas were installed in Santo Domingo in 1896! 💡",
-            "Baseball is the national sport, and the country has produced over 800 MLB players! ⚾"
-        ];
-
-        let lastFactIndex = -1;
-
-        const lastFact = localStorage.getItem("lastFact");
-        if (lastFact) {
-            factDisplay.textContent = lastFact;
-        }
-
-        factButton.addEventListener("click", function () {
-            let randomIndex;
-            do {
-                randomIndex = Math.floor(Math.random() * facts.length);
-            } while (randomIndex === lastFactIndex);
-
-            lastFactIndex = randomIndex;
-            const newFact = facts[randomIndex];
-            factDisplay.textContent = facts[randomIndex];
-
-            localStorage.setItem("lastFact", newFact);
-        });
-    } else {
+    if (!factButton || !factDisplay) {
         console.error("Fact button or display not found. Check your HTML.");
+        return;
     }
+
+    const facts = [
+        "The Dominican Republic shares an island with Haiti, making it one of two Caribbean nations on one island! 🇩🇴",
+        "Merengue and Bachata are both UNESCO-recognized cultural treasures! 🎶",
+        "The DR has the second-largest gold mine in the world, the Pueblo Viejo mine! ⛏️",
+        "The first streetlights in the Americas were installed in Santo Domingo in 1896! 💡",
+        "Baseball is the national sport, and the country has produced over 800 MLB players! ⚾"
+    ];
+
+    let lastFactIndex = -1;
+
+    const lastFact = localStorage.getItem("lastFact");
+    if (lastFact) {
+        factDisplay.textContent = lastFact;
+    }
+
+    factButton.addEventListener("click", function () {
+        let randomIndex;
+        do {
+            randomIndex = Math.floor(Math.random() * facts.length);
+        } while (randomIndex === lastFactIndex);
+
+        lastFactIndex = randomIndex;
+        const newFact = facts[randomIndex];
+        factDisplay.textContent = newFact;
+
+        localStorage.setItem("lastFact", newFact);
+    });
 });
