@@ -869,34 +869,51 @@ hr {
 .fact-card p {
     font-size: 1.1rem;
     margin-top: 10px;
-    color: #34495e;
+    color: #002D62;
 }
 
 /* Famous People */
 .famous-dominicans {
     text-align: center;
-    padding: 40px;
-    background-color: #ffffff;
-    /* Clean white background */
-    border-radius: 10px;
+    padding: 60px 10%;
+    background: linear-gradient(to bottom, #FFFFFF, #f8f8f8);
+    list-style-position: inside;
+    display: block;
 }
 
 .famous-dominicans h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #2c3e50;
+    color: #002D62;
 }
 
 .people {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
     font-size: 1.2rem;
-    color: #34495e;
+    color: #002D62;
     background: #f8f8f8;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.person-card {
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+}
+
+.person-card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 .people div {
