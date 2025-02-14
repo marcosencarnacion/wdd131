@@ -201,6 +201,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
         let lastFactIndex = -1;
 
+        const lastFact = localStorage.getItem("lastFact");
+        if (lastFact) {
+            factDisplay.textContent = lastFact;
+        }
+
         factButton.addEventListener("click", function () {
             let randomIndex;
             do {
@@ -208,7 +213,10 @@ document.addEventListener("DOMContentLoaded", function () {
             } while (randomIndex === lastFactIndex);
 
             lastFactIndex = randomIndex;
+            const newFact = facts[randomIndex];
             factDisplay.textContent = facts[randomIndex];
+
+            localStorage.setItem("lastFact", newFact);
         });
     } else {
         console.error("Fact button or display not found. Check your HTML.");
