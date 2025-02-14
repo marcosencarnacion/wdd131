@@ -808,6 +808,7 @@ hr {
     font-weight: bold;
 }
 
+/* Quick Facts Section */
 .quick-facts {
     text-align: center;
     padding: 60px 10%;
@@ -821,6 +822,8 @@ hr {
     border-radius: 10px;
 }
 
+/* Trivia Section */
+
 .trivia {
     text-align: center;
     padding: 60px 10%;
@@ -832,8 +835,7 @@ hr {
 .trivia h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #2c3e50;
-    /* Darker shade for contrast */
+    color: #002D62;
 }
 
 .trivia-container {
@@ -868,4 +870,49 @@ hr {
     font-size: 1.1rem;
     margin-top: 10px;
     color: #34495e;
+}
+
+/* Famous People */
+.famous-dominicans {
+    text-align: center;
+    padding: 40px;
+    background-color: #ffffff;
+    /* Clean white background */
+    border-radius: 10px;
+}
+
+.famous-dominicans h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.people {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 1.2rem;
+    color: #34495e;
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.people div {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+    .people {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .people div {
+        width: 30%;
+        text-align: center;
+        font-weight: bold;
+    }
 }
