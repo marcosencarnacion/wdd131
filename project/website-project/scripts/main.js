@@ -185,30 +185,32 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Set current year in footer
-    document.getElementById("year").textContent = new Date().getFullYear();
-
-    // Random Fact Generator
-    const facts = [
-        "The Dominican Republic shares an island with Haiti, making it one of two Caribbean nations on one island!",
-        "Merengue and Bachata are both UNESCO-recognized cultural treasures!",
-        "The DR has the second-largest gold mine in the world, the Pueblo Viejo mine!",
-        "The first streetlights in the Americas were installed in Santo Domingo in 1896!",
-        "Baseball is the national sport, and the country has produced over 800 MLB players!"
-    ];
-
+    // Select the button and display paragraph
     const factButton = document.getElementById("fact-button");
     const factDisplay = document.getElementById("fact-display");
 
-    let lastFactIndex = -1;
+    // Ensure both elements exist before adding an event listener
+    if (factButton && factDisplay) {
+        const facts = [
+            "The Dominican Republic shares an island with Haiti, making it one of two Caribbean nations on one island! 🇩🇴",
+            "Merengue and Bachata are both UNESCO-recognized cultural treasures! 🎶",
+            "The DR has the second-largest gold mine in the world, the Pueblo Viejo mine! ⛏️",
+            "The first streetlights in the Americas were installed in Santo Domingo in 1896! 💡",
+            "Baseball is the national sport, and the country has produced over 800 MLB players! ⚾"
+        ];
 
-    factButton.addEventListener("click", function () {
-        let randomIndex;
-        do {
-            randomIndex = Math.floor(Math.random() * facts.length);
-        } while (randomIndex === lastFactIndex);
+        let lastFactIndex = -1;
 
-        lastFactIndex = randomIndex;
-        factDisplay.textContent = facts[randomIndex];
-    });
+        factButton.addEventListener("click", function () {
+            let randomIndex;
+            do {
+                randomIndex = Math.floor(Math.random() * facts.length);
+            } while (randomIndex === lastFactIndex);
+
+            lastFactIndex = randomIndex;
+            factDisplay.textContent = facts[randomIndex];
+        });
+    } else {
+        console.error("Fact button or display not found. Check your HTML.");
+    }
 });
