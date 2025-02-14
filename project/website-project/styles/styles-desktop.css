@@ -855,7 +855,8 @@ hr {
     transition: transform 0.3s ease-in-out;
 }
 
-.fact-card:hover {
+.fact-card:hover,
+.person-card:hover {
     transform: scale(1.05);
 }
 
@@ -921,6 +922,7 @@ hr {
     font-size: 1.2rem;
     color: #34495e;
 }
+
 
 @media (min-width: 768px) {
     .people {
