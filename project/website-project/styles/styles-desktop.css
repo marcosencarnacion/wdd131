@@ -890,6 +890,7 @@ hr {
 .people {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
     font-size: 1.2rem;
     color: #002D62;
@@ -916,9 +917,9 @@ hr {
     margin-bottom: 10px;
 }
 
-.people div {
-    padding: 10px;
-    border-radius: 5px;
+.person-card p {
+    font-size: 1.2rem;
+    color: #34495e;
 }
 
 @media (min-width: 768px) {
@@ -927,9 +928,7 @@ hr {
         justify-content: center;
     }
 
-    .people div {
+    .person-card {
         width: 30%;
-        text-align: center;
-        font-weight: bold;
     }
 }
